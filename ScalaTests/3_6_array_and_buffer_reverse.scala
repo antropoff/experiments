@@ -1,0 +1,12 @@
+val arr = Array(1, 3, 4, 2, 5)
+val buf = arr.toBuffer
+println(s"arr  = ${arr.mkString(", ")}")
+println(s"buf  = $buf")
+val arr2 = arr.sorted.reverse
+val buf2 = buf.sorted.reverse
+println(s"arr2 = ${arr2.mkString(", ")}")
+println(s"buf2 = $buf2")
+val arr3 = arr.sortWith(_ > _)
+val buf3 = buf.sortWith(_ > _)
+println(s"arr3 = ${arr3.mkString(", ")}")
+println(s"buf3 = $buf3")
